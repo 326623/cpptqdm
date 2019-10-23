@@ -1,6 +1,6 @@
 #ifndef TQDM_H
 #define TQDM_H
-#include <unistd.h>
+// To be able to compile on Windows 10
 #include <chrono>
 #include <ctime>
 #include <numeric>
@@ -11,6 +11,11 @@
 #include <vector>
 #include <math.h>
 #include <algorithm>
+#ifdef _WIN32
+#include "unistd_win32.h"
+#else
+#include <unistd.h>
+#endif
 
 class tqdm {
     private:
