@@ -15,7 +15,7 @@
 #include <process.h> /* for getpid() and the exec..() family */
 #include <stdlib.h>
 
-#include "getopt.h" /* getopt at: https://gist.github.com/ashelly/7776712 */
+// #include "getopt.h" /* getopt at: https://gist.github.com/ashelly/7776712 */
 #define srandom srand
 #define random rand
 
